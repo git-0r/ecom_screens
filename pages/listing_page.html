@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>Listing Page</title>
+    <link rel="stylesheet" href="../css/listing_page.css">
     <link rel="stylesheet" href="https://objective-banach-71e419.netlify.app/main.d8c72a9941bec826e9fd.css">
 </head>
 
 <body>
-
     <!-- TOP NAVIGATION -->
 
     <nav class="top-navbar d-flex">
@@ -24,7 +23,7 @@
             <input class="search-input" type="text" placeholder="search">
         </div>
         <div class="right d-flex flex-justify-evenly flex-align-center">
-            <button class="btn btn-primary">Login</button>
+            <button class="btn btn-secondary">Log Out</button>
             <div class="badge">
                 <svg class="badge-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -47,21 +46,80 @@
     </nav>
 
     <div class="offer-notification text-align-center">Get Free Shipping On Orders Above &#8377;999</div>
-    <!-- BANNER -->
-
-    <div class="banner">
-        <img class="banner-image"
-            src="https://res.cloudinary.com/clouduser/image/upload/w_1200,h_500,c_fill/v1645362667/download_d2hg44.jpg"
-            alt="">
-        <div class="banner-info">
-            <p class="heading-xl">SUMMER SALE</p>
-            <p class="heading-xl">GET UPTO 80% OFF</p>
-        </div>
-    </div>
 
     <main>
-        <div class="popular-categories">
-            <header class="heading-lg">Popular Categories</header>
+        <p class="heading-md">Showing All Products <span class="text-clr-gray">(Showing 50+ products)</span></p>
+        <div class="product-listing-container">
+            <div class="filters">
+                <div class="d-flex flex-justify-between flex-align-center">
+                    <p class="text-xl">Filters</p>
+                    <p class="btn btn-link">Clear</p>
+                </div>
+                <div class="category-filter">
+                    <p class="text-lg">Category</p>
+                    <ul class="styled-list">
+                        <li>
+                            <input type="checkbox" name="" id="jackets">
+                            <label for="jackets">Jackets</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="shirts">
+                            <label for="shirts">Shirts</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="T-shirts">
+                            <label for="T-shirts">T-shirts</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="shoes">
+                            <label for="shoes">Shoes</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ratings-filter">
+                    <p class="text-lg">Rating</p>
+                    <ul class="styled-list">
+                        <li>
+                            <input type="radio" name="radio-list" id="4-stars">
+                            <label for="4-stars">4 stars & above</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio-list" id="3-stars">
+                            <label for="3-stars">3 stars & above</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio-list" id="2-stars">
+                            <label for="2-stars">2 stars & above</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio-list" id="1-stars">
+                            <label for="1-stars">1 stars & above</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sort-filter">
+                    <p class="text-lg">Sort by</p>
+                    <ul class="styled-list">
+                        <li>
+                            <input type="radio" name="radio-list" id="price-lh">
+                            <label for="price-lh">Price Low to High</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio-list" id="price-hl">
+                            <label for="price-hl">Price High to Low</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio-list" id="popularity">
+                            <label for="popularity">Popularity</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio-list" id="discount">
+                            <label for="discount">Discount</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
             <div class="product-card-container d-flex flex-justify-evenly">
                 <div class="card card-vertical">
                     <img class="card-img"
@@ -70,13 +128,13 @@
                     <div class="card-data">
                         <p class="card-title text-xl">Shirts</p>
                         <p>starting from &#8377; 999</p>
-                        <button class="btn btn-primary">shop now</button>
+                        <button class="btn btn-primary">Add to Cart</button>
                         <p class="card-whishlist text-xs d-flex flex-center">
                             <svg class="wishlist-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
                                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78
-                    1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                            1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                 </path>
                             </svg>
                         </p>
@@ -89,13 +147,13 @@
                     <div class="card-data">
                         <p class="card-title text-xl">Jackets</p>
                         <p>starting from &#8377; 999</p>
-                        <button class="btn btn-primary">shop now</button>
+                        <button class="btn btn-secondary">Go to Cart</button>
                         <p class="card-whishlist text-xs d-flex flex-center">
                             <svg class="wishlist-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
                                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78
-                                    1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                            1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                 </path>
                             </svg>
                         </p>
@@ -109,13 +167,13 @@
                     <div class="card-data">
                         <p class="card-title text-xl">T-shirts</p>
                         <p>starting from &#8377; 999</p>
-                        <button class="btn btn-primary">shop now</button>
+                        <button class="btn btn-primary">Add to Cart</button>
                         <p class="card-whishlist text-xs d-flex flex-center">
                             <svg class="wishlist-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
                                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78
-                                    1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                            1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                 </path>
                             </svg>
                         </p>
@@ -128,24 +186,19 @@
                     <div class="card-data">
                         <p class="card-title text-xl">Shoes</p>
                         <p>starting from &#8377; 999</p>
-                        <button class="btn btn-primary">shop now</button>
+                        <button class="btn btn-primary">Add to Cart</button>
                         <p class="card-whishlist text-xs d-flex flex-center">
                             <svg class="wishlist-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
                                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78
-                                    1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                            1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                 </path>
                             </svg>
                         </p>
                     </div>
                     <p class="card-badge card-badge-top-right card-badge-error text-xs">Hot !</p>
                 </div>
-            </div>
-        </div>
-        <div class="most-selling">
-            <header class="heading-lg">Most selling products</header>
-            <div class="product-card-container d-flex flex-justify-evenly">
                 <div class="card card-vertical">
                     <img class="card-img"
                         src="https://res.cloudinary.com/clouduser/image/upload/c_scale,w_198/v1645367117/download_hm5h9k.jpg"
@@ -153,13 +206,13 @@
                     <div class="card-data">
                         <p class="card-title text-xl">Shirts</p>
                         <p>starting from &#8377; 999</p>
-                        <button class="btn btn-primary">shop now</button>
+                        <button class="btn btn-primary">Add to Cart</button>
                         <p class="card-whishlist text-xs d-flex flex-center">
                             <svg class="wishlist-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
                                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78
-                                1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                            1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                 </path>
                             </svg>
                         </p>
@@ -173,13 +226,13 @@
                     <div class="card-data">
                         <p class="card-title text-xl">Jackets</p>
                         <p>starting from &#8377; 999</p>
-                        <button class="btn btn-primary">shop now</button>
+                        <button class="btn btn-primary">Add to Cart</button>
                         <p class="card-whishlist text-xs d-flex flex-center">
                             <svg class="wishlist-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
                                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78
-                                                1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                                            1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                 </path>
                             </svg>
                         </p>
@@ -192,13 +245,13 @@
                     <div class="card-data">
                         <p class="card-title text-xl">T-shirts</p>
                         <p>starting from &#8377; 999</p>
-                        <button class="btn btn-primary">shop now</button>
+                        <button class="btn btn-secondary">Go to Cart</button>
                         <p class="card-whishlist text-xs d-flex flex-center">
                             <svg class="wishlist-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
                                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78
-                                                1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                                            1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                 </path>
                             </svg>
                         </p>
@@ -211,25 +264,29 @@
                     <div class="card-data">
                         <p class="card-title text-xl">Shoes</p>
                         <p>starting from &#8377; 999</p>
-                        <button class="btn btn-primary">shop now</button>
+                        <button class="btn btn-primary">Add to Cart</button>
                         <p class="card-whishlist text-xs d-flex flex-center">
                             <svg class="wishlist-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
                                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78
-                                                1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                                            1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                                 </path>
                             </svg>
                         </p>
                     </div>
                     <p class="card-badge card-badge-top-right card-badge-primary text-xs">New !</p>
                 </div>
-            </div>
-            <div class="d-flex flex-center">
-                <a class="btn btn-primary" href="./pages/listing_page.html">View all products</a>
+                <div class="product-listing-navigation d-flex flex-justify-between">
+                    <button class="btn btn-secondary">Back</button>
+                    <button class="btn btn-primary">Next</button>
+                </div>
             </div>
         </div>
+        </div>
+        </div>
     </main>
+
     <!-- BANNER -->
 
     <div class="banner">
