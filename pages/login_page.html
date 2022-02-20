@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/login_page.css">
+    <link rel="stylesheet" href="https://objective-banach-71e419.netlify.app/main.d8c72a9941bec826e9fd.css">
+</head>
+
+<body>
+    <!-- TOP NAVIGATION -->
+
+    <nav class="top-navbar d-flex">
+        <div class="left">
+            <p class="text-lg">
+                Website Logo
+            </p>
+        </div>
+        <div class="center d-flex flex-justify-center">
+            <input class="search-input" type="text" placeholder="search">
+        </div>
+        <div class="right d-flex flex-justify-evenly flex-align-center">
+            <button class="btn btn-secondary">Log In</button>
+            <a href="./wishlist_page.html">
+                <div class="badge">
+                    <svg class="badge-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <span class="badge-md badge-primary">10+</span>
+                </div>
+            </a>
+            <div class="badge">
+                <svg class="badge-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="10" cy="20.5" r="1" />
+                    <circle cx="18" cy="20.5" r="1" />
+                    <path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1" />
+                </svg>
+                <span class="badge-md badge-primary">10+</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="d-flex flex-center">
+        <form class="form login-form">
+            <header class="text-align-center heading-lg">Login</header>
+            <label for="email">Email</label>
+            <input class="input" id="email" type="email" placeholder="something@gmail.com" required>
+            <p class="input-error-msg text-sm">
+                enter email in 'email@gmail.com' format</p>
+            <label for="password">Password</label>
+            <input class="input" id="password" type="password" placeholder="p@$$\/\/Or|)"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            <div class="input-error-msg text-sm">
+                <p>password must include atleast:</p>
+                <ul>
+                    <li>one uppercase letter</li>
+                    <li>one lowercase letter</li>
+                    <li>one special character</li>
+                    <li>one number</li>
+                    <li>minimum length 8 characters</li>
+                </ul>
+            </div>
+            <div class="d-flex flex-justify-between">
+                <div>
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember" class="text-sm">Remember me</label>
+                </div>
+                <p class="text-sm">forgot password?</p>
+            </div>
+            <button class="btn btn-primary login-btn">Submit</button>
+            <a href="./signup_page.html" class="btn btn-link signup-btn text-align-center">Create New Account</a>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
