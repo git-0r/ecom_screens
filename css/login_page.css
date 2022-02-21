@@ -1,12 +1,12 @@
 body {
-  max-width: 1440px;
+  max-width: 90rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 .top-navbar {
   padding: 1rem;
-  max-height: 60px;
+  max-height: 4rem;
 }
 
 .top-navbar .left {
@@ -41,7 +41,11 @@ body {
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+.forgot-password-link {
+  color: var(--clr-primary-full);
+}
+
+@media screen and (max-width: 38em) {
   :root {
     font-size: 0.75rem;
   }
