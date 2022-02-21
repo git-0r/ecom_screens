@@ -60,9 +60,15 @@ body {
   margin: 0 0.5rem;
 }
 .product-qty-control {
-  padding: 0.1rem 0.5rem;
+  height: 2rem;
+  width: 2rem;
   border-radius: var(--border-radius-full);
   border: 1px solid var(--clr-black-mid);
+}
+
+/* ----remove margin-bottom from "quantity" text */
+.qty-tag {
+  margin: 0;
 }
 
 .payment-info {
